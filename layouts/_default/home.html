@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{partial "hero.html"}}
+{{ .Content }}
+{{/*  <section id="board">
+  <h2>Our Board</h2>
+  <div class="board-list">
+    {{ range site.Data.board_info }}
+    {{ partial "board_card.html" . }}
+    {{ end }}
+  </div>
+</section>  */}}
+
+
+<section id="irgjur" class="board-section">
+  <div class="board-container" id="ibbgm7">
+    <h2 class="board-title gjs-t-h1" id="i8bqqt">Our Board</h2>
+    <div class="board-grid">
+      {{ range site.Data.board_info }}
+      {{ partial "board_card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

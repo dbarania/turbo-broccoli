@@ -1,0 +1,16 @@
+{{/* <div class="board-member">
+  <h3>{{ .position }}</h3>
+  <p><strong>{{ .name }}</strong></p>
+  <p><a href="mailto:{{ .email }}">{{ .email }}</a></p>
+</div> */}}
+
+<article class="board-member">
+  <div class="member-info">
+    <h3 class="member-title">{{.position}}</p>
+    <h3 class="member-name">{{.name}} </h3>
+    <p class="member-bio">
+      <a href="mailto:{{ .email }}">
+        {{ .email }}</a>
+    </p>
+  </div>
+</article>
