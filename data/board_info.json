@@ -1,0 +1,27 @@
+[
+  {
+    "position": "President",
+    "name": "Alice Johnson",
+    "email": "alice@example.com"
+  },
+  {
+    "position": "Vice President",
+    "name": "Bob Smith",
+    "email": "bob@example.com"
+  },
+  {
+    "position": "Treasurer",
+    "name": "Charlie Brown",
+    "email": "charlie@example.com"
+  },
+    {
+    "position": "Second mate",
+    "name": "Dalton Fox",
+    "email": "dalton@example.com"
+  },
+    {
+    "position": "PR representant",
+    "name": "Ellie Ripple",
+    "email": "ellie@example.com"
+  }
+]
