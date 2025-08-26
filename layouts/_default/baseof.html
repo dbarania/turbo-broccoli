@@ -6,9 +6,12 @@
     <title>{{ .Page.Title }}</title>
     {{ $style := resources.Get "sass/main.scss" | css.Sass | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $nav_style := resources.Get "sass/nav.scss" | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $nav_style.Permalink }}">
 </head>
 
 <body>
+    {{partial "nav.html"}}
     {{ block "main" . }}
     {{ end }}
 </body>

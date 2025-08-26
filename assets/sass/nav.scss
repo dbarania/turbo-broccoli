@@ -1,0 +1,121 @@
+.navbar-menu-toggle {
+    margin: 10px 0;
+    padding: 5px 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-menu-nav {
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-cnt {
+    max-width: 950px;
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    background-color: #222;
+    color: #ddd;
+    min-height: 50px;
+    width: 100%;
+}
+
+.navbar-container {
+    max-width: 950px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.navbar-items-c {
+    display: inline-block;
+    float: right;
+}
+
+.navbar-container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.navbar-brand {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+    min-height: 50px;
+    min-width: 50px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    padding: 10px 0;
+    display: block;
+    float: right;
+    margin: 0;
+}
+
+.navbar-menu-link {
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.navbar-burger {
+    margin: 10px 0;
+    width: 45px;
+    padding: 5px 10px;
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+.navbar-burger-line {
+    padding: 1px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#inn2w {
+    background-color: rgba(246, 246, 246, 1);
+    position: sticky;
+    top: 0px;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 56%;
+    flex-wrap: nowrap;
+    align-content: space-between;
+}
+
+#ijzc6 {
+    color: black;
+    width: 325px;
+    height: 61px;
+    cursor: pointer;
+}
+
+#ia0l6 {
+    color: rgba(0, 0, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: none;
+    direction: ltr;
+    text-decoration: none;
+    white-space: normal;
+    vertical-align: top;
+    font-size: 20px;
+    gap: 3em;
+}
