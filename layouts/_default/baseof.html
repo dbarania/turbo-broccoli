@@ -14,11 +14,8 @@
 
 
     {{ if .IsHome }}
-    {{ $hero_style := resources.Get "sass/hero.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $hero_style.RelPermalink }}">
-
-    {{ $board_style := resources.Get "sass/board.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $board_style.RelPermalink }}">
+    {{ $home_style := resources.Get "sass/homepage.scss" | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}">
     {{ end }}
 </head>
 
