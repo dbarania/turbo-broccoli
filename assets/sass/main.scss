@@ -3,21 +3,21 @@ body {
   font-family: sans-serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  background-color: rgb(249, 250, 251);
+  background-color: rgb(59, 111, 163);
   line-height: inherit;
 }
 
-img,
-svg {
-  display: block;
-  vertical-align: middle;
-}
+// img,
+// svg {
+//   display: block;
+//   vertical-align: middle;
+// }
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
+// img,
+// video {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 a {
   color: inherit;
@@ -29,8 +29,4 @@ footer {
   padding: 2px 2px;
   font-size: .7em;
   text-align: center;
-}
-
-#map {
-  height: 300px;
 }

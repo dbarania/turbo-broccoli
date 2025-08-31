@@ -15,15 +15,15 @@
 
     {{ if .IsHome }}
     {{ $home_style := resources.Get "sass/homepage.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}"> 
     {{ end }}
 </head>
 
 <body>
     {{partial "nav.html"}}
-    {{ block "main" . }}
+    {{/* {{ block "main" . }}
     {{ end }}
-    {{partial "footer.html"}}
+    {{partial "footer.html"}} */}}
 </body>
 
 </html>
