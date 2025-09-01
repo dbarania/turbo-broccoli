@@ -3,7 +3,7 @@
 
 <section id="about" class="about-section">
   <div class="about-container">
-    <h2 class="about-title">{{ .Params.about_title }}</h2>
+    <h2 class="about-title">O nas</h2>
     <div class="about-content">
       <div class="about-text">
         {{ .Content }}
@@ -12,9 +12,9 @@
   </div>
 </section>
 
-<section id="projects" class="projects-section">
+<section class="projects-section">
   <div class="projects-container">
-    <h2 class="projects-title">Our Projects</h2>
+    <h2 class="projects-title">Projekty</h2>
     <div class="projects-grid">
       {{ range where .Site.RegularPages "Section" "projects" }}
       {{ if .Params.main_site }}
@@ -27,7 +27,7 @@
 
 <section id="irgjur" class="board-section">
   <div class="board-container" id="ibbgm7">
-    <h2 class="board-title gjs-t-h1" id="i8bqqt">Our Board</h2>
+    <h2 class="board-title gjs-t-h1" id="i8bqqt">Zarząd</h2>
     <div class="board-grid">
       {{ range site.Data.board_info }}
       {{ partial "board_card.html" . }}
