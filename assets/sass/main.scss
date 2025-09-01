@@ -7,26 +7,5 @@ body {
   line-height: inherit;
 }
 
-// img,
-// svg {
-//   display: block;
-//   vertical-align: middle;
-// }
-
-// img,
-// video {
-//   max-width: 100%;
-//   height: auto;
-// }
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-footer {
-  background: #f2f2f2;
-  padding: 2px 2px;
-  font-size: .7em;
-  text-align: center;
-}
+@import "nav";
+@import "footer";

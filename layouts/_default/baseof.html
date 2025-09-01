@@ -6,16 +6,11 @@
     <title>{{ .Page.Title }}</title>
     {{ $style := resources.Get "sass/main.scss" | css.Sass | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ $nav_style := resources.Get "sass/nav.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $nav_style.Permalink }}">
-
-    {{ $footer_style := resources.Get "sass/footer.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $footer_style.Permalink }}">
 
 
     {{ if .IsHome }}
     {{ $home_style := resources.Get "sass/homepage.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}"> 
+    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}">
     {{ end }}
 </head>
 
