@@ -1,0 +1,23 @@
+[
+    {
+        "image": "images/hero/random-image2.jpeg",
+        "header": "Fusce sollicitudin maximus nunc",
+        "subtext": "Cras luctus quam mi, non sollicitudin velit vulputate eu. Pellentesque.",
+        "blur_position": 0,
+        "blur_width": 33
+    },
+    {
+        "image": "images/hero/random-image3.jpeg",
+        "header": "maximus nunc",
+        "subtext": "Cras luctus quam mi, non sollicitudin velit vulputate eu. Pellentesque.",
+        "blur_position": 30,
+        "blur_width": 33
+    },
+    {
+        "image": "images/hero/random-image1.jpeg",
+        "header": "m nunc",
+        "subtext": " sollicitudin velit vulputate eu. Pellentesque.",
+        "blur_position": 67,
+        "blur_width": 33
+    }
+]

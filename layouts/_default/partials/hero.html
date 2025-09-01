@@ -1,23 +1,15 @@
-<section id="hero-carousel" class="hero-carousel">
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ $images := resources.Match "images/hero/*" }}
-            {{ range $i, $img := $images }}
-            <div class="carousel-slide {{ if eq $i 0 }}active{{ end }}">
-                <img src="{{ $img.RelPermalink }}" alt="hero-{{ $i }}" loading="lazy" class="carousel-image" />
+<section class="hero">
+    <div class="hero-slider" id="slides">
+        {{ range site.Data.hero_design }}
+        <div class="hero-slide">
+            <img src="{{.image}}" alt="{{.image}}" loading="lazy" />
+            <div class="hero-blur" style="--blur-width: {{.blur_width}}%;--blur-position: {{.blur_position}}%;">
+                <div class="hero-slide-content">
+                    <h1>{{.header}}</h1>
+                    <p>{{.subtext}}</p>
+                </div>
             </div>
-            {{ end }}
         </div>
-
-        <div class="carousel-content">
-            <h1 class="hero-title">Innovating Tomorrow's Robotics Today</h1>
-            <p class="hero-subtitle">Join the Robotics Student Association to collaborate, learn, and innovate.</p>
-        </div>
-
-        <div class="carousel-indicators">
-            {{ range $i, $img := $images }}
-            <span data-slide="{{ $i }}" class="indicator {{ if eq $i 0 }}active{{ end }}"></span>
-            {{ end }}
-        </div>
+        {{ end }}
     </div>
 </section>
