@@ -1,3 +1,6 @@
+@import "nav";
+@import "footer";
+
 body {
   margin: 0 auto;
   font-family: sans-serif;
@@ -7,5 +10,6 @@ body {
   line-height: inherit;
 }
 
-@import "nav";
-@import "footer";
+a {
+  text-decoration: none;
+}
