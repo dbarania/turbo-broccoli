@@ -1,15 +1,13 @@
 .board-member-card {
     text-align: center;
     transition: transform 0.3s ease;
+    background-color: #7e93d7;
 }
 
 .board-member-card:hover {
     transform: translateY(-5px);
 }
 
-.board-member-card:hover .member-image-wrapper {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
 
 .board-member-cards-section {
     padding-top: 5rem;
@@ -18,11 +16,12 @@
 }
 
 .member-info {
+    background-color: #9d1691;
     padding: 0 15px;
 }
 
 .member-title {
-
+    background-color: brown;
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
@@ -32,7 +31,7 @@
 
 
 .member-name {
-
+    background-color: chartreuse;
     color: #3b82f6;
     font-size: 1rem;
     font-weight: 500;
@@ -40,6 +39,7 @@
 }
 
 .member-bio {
+    background-color: coral;
     color: #374151;
     font-size: 0.95rem;
     line-height: 1.6;

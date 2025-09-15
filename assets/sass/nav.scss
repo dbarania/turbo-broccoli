@@ -1,8 +1,13 @@
+// @use 'colors' as *;
+
 .navbar {
     min-height: 50px;
     height: 13vh;
     width: 100%;
-    background-color: beige;
+
+    // background: linear-gradient(128deg, rgba(242, 242, 242, 1) 0%, rgba(255, 245, 245, 1) 36%, rgba(249, 233, 217, 1) 100%);
+    // background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: $primary;
     position: sticky;
     display: flex;
     align-items: center;
@@ -84,7 +89,7 @@
 }
 
 .hover-underline:hover {
-    color:rgb(255, 239, 220);
+    color: rgb(255, 239, 220);
     /* target color on hover */
 }
 
