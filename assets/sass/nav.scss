@@ -1,73 +1,123 @@
-.navbar-menu-toggle {
-    margin: 10px 0;
-    padding: 5px 10px;
-    display: none;
-    cursor: pointer;
-}
+// @use 'colors' as *;
 
-.navbar-menu-nav {
-    padding: 10px 0;
+.navbar {
+    min-height: 50px;
+    height: 13vh;
+    width: 100%;
+
+    // background: linear-gradient(128deg, rgba(242, 242, 242, 1) 0%, rgba(255, 245, 245, 1) 36%, rgba(249, 233, 217, 1) 100%);
+    // background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: $primary;
+    position: sticky;
     display: flex;
-    gap: 20px;
+    align-items: center;
+
 }
 
 .navbar-cnt {
-    max-width: 950px;
+    // background-color: aqua;
+    min-width: 300p;
     margin: 0 auto;
-    width: 95%;
+    width: 65%;
+    height: 90%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
-.navbar {
-    background-color: #222;
-    color: #ddd;
-    min-height: 50px;
-    width: 100%;
+
+.navbar-logo {
+    // background-color: beige;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
 }
 
-.navbar-container {
-    max-width: 950px;
-    margin: 0 auto;
-    width: 95%;
+.navbar-logo-2 {
+    // background-color: darkgreen;
+    height: 70%;
+
+    img {
+
+        // background-color: red;
+        height: 100%;
+        width: auto;
+        cursor: pointer;
+    }
 }
 
-.navbar-items-c {
-    display: inline-block;
-    float: right;
+.navbar-items {
+    // background-color: chartreuse;
+    // display: inline-block;
+    // margin-top : 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-container::after {
-    content: "";
-    clear: both;
-    display: block;
+.navbar-menu-links {
+    // background-color: rebeccapurple;
+    border-radius: .9em;
+    padding: 1em;
+    display: flex;
+    color: rgba(0, 0, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+
+    font-size: 0.9em;
+    // gap: 5em;
 }
 
-.navbar-brand {
-    vertical-align: top;
-    display: inline-block;
-    padding: 5px;
-    min-height: 50px;
-    min-width: 50px;
-    color: inherit;
+.navbar-menu-links a {
     text-decoration: none;
+    color: black;
+    padding: 0 1.5em;
 }
 
-.navbar-menu {
-    padding: 10px 0;
-    display: block;
-    float: right;
-    margin: 0;
+.navbar-menu-links a:not(:first-child) {
+    border-left: 2px solid rgb(95, 95, 95);
+    /* line color */
+    //   padding-left: 0em; /* space after line */
 }
 
-.navbar-menu-link {
-    margin: 0;
-    color: inherit;
-    text-decoration: none;
+.hover-underline {
+    // color: #ffffff;
+    position: relative;
     display: inline-block;
-    padding: 10px 15px;
+    transition: color 0.3s ease;
 }
+
+.hover-underline:hover {
+    color: rgb(255, 239, 220);
+    /* target color on hover */
+}
+
+.hover-underline::after,
+.hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 25px;
+    background: linear-gradient(to right, #e41313, #0084ff);
+    bottom: -5px;
+    left: 10%;
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+    transition: transform 0.3s ease-out;
+}
+
+.hover-underline::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+    transform: scaleX(1);
+}
+
 
 .navbar-burger {
     margin: 10px 0;
@@ -82,40 +132,4 @@
     padding: 1px;
     background-color: white;
     margin: 5px 0;
-}
-
-#inn2w {
-    background-color: rgba(246, 246, 246, 1);
-    position: sticky;
-    top: 0px;
-    height: 8vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    gap: 56%;
-    flex-wrap: nowrap;
-    align-content: space-between;
-}
-
-#ijzc6 {
-    color: black;
-    width: 325px;
-    height: 61px;
-    cursor: pointer;
-}
-
-#ia0l6 {
-    color: rgba(0, 0, 0, 1);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    letter-spacing: 0px;
-    text-align: center;
-    text-transform: none;
-    direction: ltr;
-    text-decoration: none;
-    white-space: normal;
-    vertical-align: top;
-    font-size: 20px;
-    gap: 3em;
 }

@@ -1,37 +1,17 @@
-body {
+@import 'colors';
+@import "nav";
+@import "footer";
 
+body {
   margin: 0 auto;
   font-family: sans-serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  background-color: rgb(249, 250, 251);
+  background-color: rgb(255, 255, 255);
   line-height: inherit;
 }
 
-img,
-svg {
-  display: block;
-  vertical-align: middle;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
+  text-decoration: none;
   color: inherit;
-  text-decoration: inherit;
-}
-
-footer {
-  background: #f2f2f2;
-  padding: 2px 2px;
-  font-size: .7em;
-  text-align: center;
-}
-
-#map {
-  height: 300px;
 }

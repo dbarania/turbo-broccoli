@@ -6,27 +6,24 @@
     <title>{{ .Page.Title }}</title>
     {{ $style := resources.Get "sass/main.scss" | css.Sass | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ $nav_style := resources.Get "sass/nav.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $nav_style.Permalink }}">
-
-    {{ $footer_style := resources.Get "sass/footer.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $footer_style.Permalink }}">
 
 
     {{ if .IsHome }}
-    {{ $hero_style := resources.Get "sass/hero.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $hero_style.RelPermalink }}">
+    {{ $home_style := resources.Get "sass/homepage.scss" | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}">
+    {{ end }}
 
-    {{ $board_style := resources.Get "sass/board.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $board_style.RelPermalink }}">
+    {{ if eq .Layout "contact" }}
+    {{ $contact_style := resources.Get "sass/contactpage.scss" | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $contact_style.RelPermalink }}">
     {{ end }}
 </head>
 
 <body>
-    {{partial "nav.html"}}
+    {{partial "nav.html" .}}
     {{ block "main" . }}
     {{ end }}
-    {{partial "footer.html"}}
+    {{partial "footer.html" .}}
 </body>
 
 </html>

@@ -1,19 +1,34 @@
 {{ define "main" }}
+
 {{partial "hero.html"}}
-{{ .Content }}
-{{/*  <section id="board">
-  <h2>Our Board</h2>
-  <div class="board-list">
-    {{ range site.Data.board_info }}
-    {{ partial "board_card.html" . }}
-    {{ end }}
+
+<section class="about-section">
+  <div class="about-container">
+    <h2 class="section-title">O nas</h2>
+    <div class="about-content">
+      <div class="about-text">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
-</section>  */}}
+</section>
 
+<section class="projects-section">
+  <div class="projects-container">
+    <h2 class="section-title">Projekty</h2>
+    <div class="projects-grid">
+      {{ range where .Site.RegularPages "Section" "projects" }}
+      {{ if .Params.main_site }}
+      {{ partial "project_card.html" . }}
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-<section id="irgjur" class="board-section">
-  <div class="board-container" id="ibbgm7">
-    <h2 class="board-title gjs-t-h1" id="i8bqqt">Our Board</h2>
+<section class="board-section">
+  <div class="board-container" >
+    <h2 class="board-title">Zarząd</h2>
     <div class="board-grid">
       {{ range site.Data.board_info }}
       {{ partial "board_card.html" . }}

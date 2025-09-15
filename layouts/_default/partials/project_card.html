@@ -1,0 +1,16 @@
+<article class="project-card">
+    <div class="project-image-wrapper">
+        {{ with .Params.main_site_image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" class="project-image" />
+        {{ end }}
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">{{ .Title }}</h3>
+        {{ with .Params.main_site_item_descr }}
+        <p class="project-description">{{ . }}</p>
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="project-link">
+            Read More <span class="link-arrow">→</span>
+        </a>
+    </div>
+</article>
