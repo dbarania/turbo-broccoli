@@ -4,7 +4,7 @@
 
 <section class="about-section">
   <div class="about-container">
-    <h2 class="about-title">O nas</h2>
+    <h2 class="section-title">O nas</h2>
     <div class="about-content">
       <div class="about-text">
         {{ .Content }}
@@ -15,7 +15,7 @@
 
 <section class="projects-section">
   <div class="projects-container">
-    <h2 class="projects-title">Projekty</h2>
+    <h2 class="section-title">Projekty</h2>
     <div class="projects-grid">
       {{ range where .Site.RegularPages "Section" "projects" }}
       {{ if .Params.main_site }}

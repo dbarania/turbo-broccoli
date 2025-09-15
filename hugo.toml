@@ -6,3 +6,21 @@ title = 'My New Hugo Site'
   [caches.images]
     dir = ':cacheDir/images'
 
+[params]
+  email = "info@robotass.edu"
+
+[menu]
+  [[menu.main]]
+    name = "Strona główna"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Projekty"
+    url = "/projects"
+    weight = 2
+
+  [[menu.main]]
+    name = "Kontakt"
+    url = "/contact"
+    weight = 3

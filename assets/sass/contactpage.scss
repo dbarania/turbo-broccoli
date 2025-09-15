@@ -1,21 +1,80 @@
+body {
+  background-color: rgb(215, 223, 221);
+
+}
+
 .contact-section {
   height: 87vh;
-  background-color: red;
+  width: 80%;
+  margin: 0 auto;
+  color: rgb(17, 68, 112);
+
 }
+
 
 .contact-content {
-  margin: 0 auto;
-  width: 70%;
+  font-size: 0.9em;
+}
+
+.contact-list {
+  padding-top: 3rem;
+  margin-left: 6rem;
+}
+
+.contact-detail {
+  margin-top: 1rem;
+}
+
+#contact-email>a {
+  color: inherit;
+  transition: color 0.15s ease;
+}
+
+#contact-email>a:hover {
+  color: rgb(179, 179, 179);
+}
+
+#contact-facebook>a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+#contact-facebook>a:hover {
+  color: rgb(179, 179, 179);
+}
+
+.contact-map-address {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
 
 }
 
+.contact-address {
+  margin-left: 6rem;
+  margin-top: 4rem;
+  font-size: 0.8em;
+  
 
-.contact-text {
-  background-color: purple;
-  padding: 20px;
+}
+
+.contact-address>a:hover {
+  transition: color 0.15s ease;
+  color: aqua;
+}
+
+.contact-map,
+.contact-address>a {
+  text-decoration: underline;
+
 }
 
 .contact-map {
-  background-color: bisque;
-  padding: 20px;
+  margin: 1rem;
+  display: block;
+  padding: 1rem;
+}
+
+.contact-map>small {
+  font-size: medium;
 }

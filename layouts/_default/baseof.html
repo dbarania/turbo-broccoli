@@ -20,10 +20,10 @@
 </head>
 
 <body>
-    {{partial "nav.html"}}
+    {{partial "nav.html" .}}
     {{ block "main" . }}
     {{ end }}
-    {{partial "footer.html"}}
+    {{partial "footer.html" .}}
 </body>
 
 </html>

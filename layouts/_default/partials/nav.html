@@ -16,10 +16,11 @@
         </div> */}}
         <div class="navbar-items">
             <nav class="navbar-menu-links">
-                <a href="/" class="hover-underline">Strona główna</a>
-                <a href="/projects" class="hover-underline">Projekty</a>
-                <a href="/contact" class="hover-underline">Kontakt</a>
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="hover-underline">{{ .Name }}</a>
+                {{ end }}
             </nav>
+
         </div>
     </div>
 </div>
