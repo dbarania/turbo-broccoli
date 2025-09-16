@@ -17,10 +17,10 @@ title = 'My New Hugo Site'
 
   [[menu.main]]
     name = "Projekty"
-    url = "/projects"
+    url = "/projects/"
     weight = 2
 
   [[menu.main]]
     name = "Kontakt"
-    url = "/contact"
+    url = "/contact/"
     weight = 3

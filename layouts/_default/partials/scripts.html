@@ -1,1 +1,14 @@
-<script defer language="javascript" type="text/javascript" src="{{ "js/hero_logic.js" | relURL }}"></script>
+<!-- <script defer language="javascript" type="text/javascript" src="{{ "js/hero_logic.js" | relURL }}"></script> -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname;
+  console.log(currentPath)
+  document.querySelectorAll(".hover-underline-animation").forEach(link => {
+    console.log(link.getAttribute("href"))
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>

@@ -24,13 +24,13 @@ a {
 .hover-underline-animation::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 75%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transition: transform 0.25s ease-out;
+  bottom: -1px;
+  left: 12%;
+  background-color: $nav-text;
+  transition: transform 0.15s ease-out;
 }
 
 .hover-underline-animation:hover::after {
@@ -58,5 +58,25 @@ a {
 }
 
 .hover-underline-animation.right:hover::after {
+  transform-origin: bottom right;
+}
+
+/* Keep underline for active link */
+.hover-underline-animation.active::after {
+  transform: scaleX(1);
+  transition: none;
+  /* no animation for active */
+}
+
+/* Optional: make sure transform-origin matches alignment */
+.hover-underline-animation.active.left::after {
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation.active.center::after {
+  transform-origin: bottom center;
+}
+
+.hover-underline-animation.active.right::after {
   transform-origin: bottom right;
 }

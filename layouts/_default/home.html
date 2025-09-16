@@ -1,10 +1,22 @@
 {{ define "main" }}
 
-{{partial "hero.html"}}
+<section class="hero">
+    <div class="hero-content">
+        <img src="{{ "images/hero/random-image2.jpeg" | relURL }}" alt="" class="hero-image">
+        <div class="hero-blur">
+            <p class="hero-text">
+                Lorem ipsum kurde ten 
+                <br>
+                <small>assan is reture</small>
+            </p>
+        </div>
+
+    </div>
+</section>
 
 <section class="about-section">
   <div class="about-container">
-    <h2 class="section-title">O nas</h2>
+    <h2 class="section-title">Kim jesteśmy</h2>
     <div class="about-content">
       <div class="about-text">
         {{ .Content }}
