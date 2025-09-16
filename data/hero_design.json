@@ -4,7 +4,7 @@
         "header": "Fusce sollicitudin maximus nunc",
         "subtext": "Cras luctus quam mi, non sollicitudin velit vulputate eu. Pellentesque.",
         "blur_position": 0,
-        "blur_width": 33
+        "blur_width": 100
     },
     {
         "image": "images/hero/random-image3.jpeg",
