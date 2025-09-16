@@ -2,7 +2,7 @@
     <div class="hero-slider" id="slides">
         {{ range site.Data.hero_design }}
         <div class="hero-slide">
-            <img src="{{.image}}" alt="{{.image}}" loading="lazy" />
+            <img src="{{ .image | relURL }}" alt="{{.image}}" loading="lazy" />
             <div class="hero-blur" style="--blur-width: {{.blur_width}}%;--blur-position: {{.blur_position}}%;">
                 <div class="hero-slide-content">
                     <h1>{{.header}}</h1>
