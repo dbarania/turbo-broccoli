@@ -9,6 +9,32 @@ title = 'My New Hugo Site'
 [params]
   email = "info@robotass.edu"
 
+  [[params.board]]
+  position = "President"
+  name = "Alice Johnson"
+  email = "alice@example.com"
+
+  [[params.board]]
+  position = "Vice President"
+  name = "Bob Smith"
+  email = "bob@example.com"
+
+  [[params.board]]
+  position = "Treasurer"
+  name = "Charlie Brown"
+  email = "charlie@example.com"
+
+  [[params.board]]
+  position = "Second mate"
+  name = "Dalton Fox"
+  email = "dalton@example.com"
+
+  [[params.board]]
+  position = "PR representant"
+  name = "Ellie Ripple"
+  email = "ellie@example.com"
+
+
 [menu]
   [[menu.main]]
     name = "Strona główna"
@@ -16,11 +42,6 @@ title = 'My New Hugo Site'
     weight = 1
 
   [[menu.main]]
-    name = "Projekty"
-    url = "/projects/"
-    weight = 2
-
-  [[menu.main]]
     name = "Kontakt"
     url = "/contact/"
-    weight = 3
+    weight = 2
