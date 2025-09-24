@@ -6,11 +6,24 @@
     <title>{{ .Page.Title }}</title>
     {{ $style := resources.Get "sass/main.scss" | css.Sass | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+
+    {{ if .IsHome }}
+    {{ $home_style := resources.Get "sass/homepage.scss" | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $home_style.RelPermalink }}">
+    {{ end }}
+
+    {{ if eq .Layout "contact" }}
+    {{ $contact_style := resources.Get "sass/contactpage.scss" | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $contact_style.RelPermalink }}">
+    {{ end }}
 </head>
 
 <body>
+    {{partial "nav.html" . }}
     {{ block "main" . }}
     {{ end }}
+    {{partial "footer.html" .}}
 </body>
 
 </html>

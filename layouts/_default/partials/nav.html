@@ -1,0 +1,26 @@
+<div class="navbar">
+    <div class="navbar-cnt">
+        <div class="navbar-logo">
+            <div class="navbar-logo-2">
+                <a href="{{ "" | relURL }}">
+                    <img src="{{ "images/logo/logo_line_color.svg" | relURL }}" />
+                </a>
+            </div>
+        </div>
+        {{/* <div class="navbar-menu-toggle">
+            <div data-type-icon id="isvbn" class="gjs-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
+                </svg>
+            </div>
+        </div> */}}
+        <div class="navbar-items">
+            <nav class="navbar-menu-links">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL | relURL }}" class="hover-underline-animation left">{{ .Name }}</a>
+                {{ end }}
+            </nav>
+
+        </div>
+    </div>
+</div>

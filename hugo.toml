@@ -1,3 +1,47 @@
-baseURL = 'https://example.org/'
+baseURL = "https://dbarania.github.io/turbo-broccoli/"
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  email = "info@robotass.edu"
+
+  [[params.board]]
+  position = "President"
+  name = "Alice Johnson"
+  email = "alice@example.com"
+
+  [[params.board]]
+  position = "Vice President"
+  name = "Bob Smith"
+  email = "bob@example.com"
+
+  [[params.board]]
+  position = "Treasurer"
+  name = "Charlie Brown"
+  email = "charlie@example.com"
+
+  [[params.board]]
+  position = "Second mate"
+  name = "Dalton Fox"
+  email = "dalton@example.com"
+
+  [[params.board]]
+  position = "PR representant"
+  name = "Ellie Ripple"
+  email = "ellie@example.com"
+
+
+[menu]
+  [[menu.main]]
+    name = "Strona główna"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Kontakt"
+    url = "/contact/"
+    weight = 2
