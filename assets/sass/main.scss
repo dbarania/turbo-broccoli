@@ -12,6 +12,11 @@ a {
   color: inherit;
 }
 
+.link-hover{
+  color: inherit;
+  transition: color 1.5 ease;
+}
+
 .navbar {
   min-height: 50px;
   height: 13vh;
